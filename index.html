@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <title>PREM</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    
+    .mySlides {
+        display: none;
+    }
+
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+</style>
+
+<body>
+    <!--this part is the nav bar of my codde-->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Prem Kumar Naidu</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#Profiles" class="nav__link">Profiles</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!--this is the end of my navbar -->
+
+    <main class="l-main">
+        <!--home mama -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Prem</span><br>A Web Developer</h1>
+                <a href="pkkk.pdf" target="_blank" class="button">Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-behnce'></i></a>
+                <a href="https://gitub.com/Prempk29" class="home__social-icon"><i class='bx bxl-gthub'></i></a>
+            </div>
+            <div class="home__img">
+                <!--it is used for the shape-->
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="-350" y="1" id="pk" href="prk.jpg" />
+                    </g>
+                </svg>
+                <!--it is completed ma-->
+            </div>
+        </section>
+        <!--the home section has been completed-->
+        <!--------------ABOUT ------------>
+        <section class="about section " id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img " src=" assets/img/about.jpg" alt="prem-@loading">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Prem</h2>
+                    <p class="about__text">I am pursuing my b.tech 3rd year in vignan istitute of information
+                        technology.
+                        I am currently learning Fullstack Developmemt and also an Competative programmer
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!------skills mama------>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+
+
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-copyright skills__icon'></i>
+                            <span class="skills__name">C++</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <img src="assets/img/skils.jpg" alt="" class="skills__img" width="800px">
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-----testcase code----->
+        <section class="work section" id="Profiles">
+            <div class="slideshow-container" >
+                <h2 class="section-title" id="Profile">Profiles</h2>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade"> 
+                    <center><a href="https://www.codechef.com/users/prempk" target="_blank"/><img src="cc.jpg" style="width:50%;"></center>
+                    <div class="text" style="color:black;"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <center><a href="https://leetcode.com/prem_pkk/" target="_blank"/><img src="leetcode.png" style="width:50%"></center>
+                    <div class="text" style="color:aliceblue"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <center><a href="https://www.hackerrank.com/prempk_7172" target="_blank"/><img src="hk.png" style="width:50%"></center>
+                    <div class="text" style="color:antiquewhite"></div>
+                </div>
+                <div class="mySlides fade">
+                    <center><a href="dev.html" target="_blank"/><img src="wddd.jpg" style="width:50%"></center>
+                    <div class="text" style="color:aqua">Certificates</div>
+                </div>
+                <div class="mySlides fade">
+                    <center><a href="pro.html" target="_blank"><img src="pl.jpg" style="width:50%"></center>
+                    <div class="text" style="color:aliceblue">certificates</div>
+                </div>
+
+            
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+
+
+        <!----contact mama------>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form method="POST" action="mailto:20l31a05n0@gmail.com" class="contact__form" enctype="text/plain">
+                    <input type="text" placeholder="Name" class="contact__input" name="">
+                    <input type="email" placeholder="Email" name="email:" class="contact__input">
+                    <textarea name="message:"cols="0" rows="10" class="contact__input" ></textarea>
+                    <button type="submit" class="contact__button button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+        <!-------footer mama---->
+        <footer class="footer" id="">
+            
+            <p class="footer__title">Prem Kumar Naidu</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/prem._.pkk/" target="_blank" class="footer__icon" target="_self"><i
+                        class='bx bxl-linkedin bx-flip-vertical bx-tada'></i></a>
+                <a href="mailto:premk.7172@gmail.com" target="_blank" class="footer__icon" target="_self"><i
+                        class='bx bx-mail-send bx-tada'></i></a>
+                <a href="https://www.github.com/Prempk29" target="_blank" class="footer__icon" target="_self"><i
+                        class='bx bxl-github bx-tada'></i></a>
+            </div>
+            <p class="footer__copy">&#169;All rigths reserved</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
